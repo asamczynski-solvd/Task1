@@ -2,6 +2,7 @@ import java.util.*;
 
 public class NumberSorting {
     public static void main(String[] args){
+
         Scanner kbd = new Scanner(System.in);
         List<Integer> numList = new ArrayList<Integer>();
 

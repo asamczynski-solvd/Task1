@@ -2,6 +2,7 @@
 Cite: Introduction to Java Programming Comprehensive Version 10th Edition by Y. Daniel Liang (2015), 870-872
  */
 public class QuickSort {
+
     public static void quickSort(int[] list){
         quickSort(list, 0, list.length - 1);
     }
@@ -46,5 +47,4 @@ public class QuickSort {
             return first;
         }
     }
-
 }
