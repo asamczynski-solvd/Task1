@@ -3,12 +3,12 @@ import java.util.*;
 public class NumberSorting {
     public static void main(String[] args){
 
-        Scanner kbd = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         List<Integer> numList = new ArrayList<Integer>();
 
         System.out.println("Enter integers to be sorted separated by spaces.\nEnter any letter when finished.");
-        while(kbd.hasNextInt()){
-            numList.add(kbd.nextInt());
+        while(scanner.hasNextInt()){
+            numList.add(scanner.nextInt());
         }
         int[] numArray = numList.stream().mapToInt(Integer::intValue).toArray();
         QuickSort.quickSort(numArray);
